@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Phishing URL Detector",
+  "version": "1.0",
+  "description": "Detect if a URL is phishing or benign.",
+  "permissions": [
+    "activeTab",
+    "http://127.0.0.1:5000/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon32.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon32.png",
+    "128": "icons/icon128.png"
+  }
+}
